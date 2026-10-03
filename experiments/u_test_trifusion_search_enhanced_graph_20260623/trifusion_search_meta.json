@@ -1,0 +1,13 @@
+{
+  "data": "data\\processed\\Ueff_all_U_test_enhanced_modalities.csv",
+  "knowledge": "processed/u_knowledge_cards.csv",
+  "cgcnn_dir": "experiments/cgcnn_u_test_all_structures_20260623",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "feature_construction_uses_test_labels": false,
+  "text_vectorizers_fit_on_train_only": true,
+  "fusion_selection": "Meta models and residual alpha are selected inside train OOF only."
+}

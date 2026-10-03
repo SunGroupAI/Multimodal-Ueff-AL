@@ -1,0 +1,5 @@
+# Optional raw-feature/graph rebuild dependencies. External CGCNN code and raw assets also required.
+-r requirements.txt
+pymatgen==2025.6.14
+torch==2.8.0
+pyarrow==21.0.0

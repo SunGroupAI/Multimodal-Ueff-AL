@@ -1,0 +1,12 @@
+{
+  "python": "3.10.16",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.0",
+    "matplotlib": "3.10.0"
+  },
+  "historical_environment_lock_available": false
+}

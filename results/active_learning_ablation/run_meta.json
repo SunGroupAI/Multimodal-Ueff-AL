@@ -1,0 +1,47 @@
+{
+  "generated": "2026-06-23T17:34:00",
+  "data": "data\\processed\\Ueff_clean_main.csv",
+  "n_samples": 126,
+  "modalities": [
+    "comp",
+    "struct",
+    "electronic"
+  ],
+  "models_requested": [
+    "extratrees"
+  ],
+  "strategies": [
+    "random",
+    "uncertainty",
+    "diversity",
+    "hybrid"
+  ],
+  "fusion": [
+    "early"
+  ],
+  "initial_size": 10,
+  "batch_size": 5,
+  "rounds": 10,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "test_size": 0.2,
+  "sensitivity": "remove_abnormal",
+  "leakage_controls": [
+    "same seed-specific train/pool/test split for all modality/model/strategy comparisons",
+    "initial labeled set fixed per seed before strategy simulation",
+    "imputer/scaler/model fitted only on current labeled set each round",
+    "test labels used only for evaluation"
+  ],
+  "outputs": [
+    "results.csv",
+    "summary_by_modality.csv",
+    "learning_curve.csv",
+    "selected_samples.csv",
+    "figures/*.png"
+  ]
+}

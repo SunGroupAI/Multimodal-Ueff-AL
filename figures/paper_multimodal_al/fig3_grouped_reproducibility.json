@@ -1,0 +1,63 @@
+{
+  "generated_utc": "2026-10-01T05:25:01.559948+00:00",
+  "script": "scripts/plot_fig3_grouped_representation_framework.py",
+  "inputs": [
+    "analysis_multimodal_AL/modality_by_seed.csv",
+    "results/active_learning_ablation/results.csv",
+    "results/active_learning_ablation/run_meta.json"
+  ],
+  "aggregation": {
+    "Single": [
+      "Element",
+      "Structure",
+      "Chemical prior"
+    ],
+    "Bimodal": [
+      "Element + Structure",
+      "Element + Chemical prior",
+      "Structure + Chemical prior"
+    ],
+    "Multimodal": [
+      "Multimodal"
+    ],
+    "order": "group means are retained as background outputs; the main figure uses panel-specific maximum-degradation selections documented below"
+  },
+  "panel_a_selection": {
+    "rule": "Within the supervised ablation, select the Single and Bimodal representations with the largest aggregate mean MAE.",
+    "selected_single": "Structure",
+    "selected_bimodal": "Element + Structure",
+    "complete_ablation_output": "figS_complete_modality_ablation"
+  },
+  "panel_specific_active_learning_selection": {
+    "rule": "Select the poorest mean representation within each category for the metric displayed in that panel: lowest Spearman rho in b, highest integrated MAE in c, and highest final-round MAE in d.",
+    "b": {
+      "Single": "electronic",
+      "Bimodal": "struct+electronic",
+      "Multimodal": "comp+struct+electronic"
+    },
+    "c": {
+      "Single": "struct",
+      "Bimodal": "comp+struct",
+      "Multimodal": "comp+struct+electronic"
+    },
+    "d": {
+      "Single": "struct",
+      "Bimodal": "struct+electronic",
+      "Multimodal": "comp+struct+electronic"
+    }
+  },
+  "active_learning": {
+    "policy": "hybrid",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "rounds": 10,
+    "initial_size": 10,
+    "batch_size": 5
+  },
+  "model_training": "None; plotting and descriptive aggregation only."
+}

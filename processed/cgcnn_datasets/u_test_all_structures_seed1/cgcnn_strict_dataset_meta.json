@@ -1,0 +1,26 @@
+{
+  "input_feature_table": "processed\\u_test_full_multimodal_all_structures_20260623\\features_u_test_full_multimodal.parquet",
+  "input_structure_dir": "structures_ABO3_only",
+  "max_u": 15.0,
+  "n_input_rows": 180,
+  "n_output_rows": 180,
+  "n_labeled_rows": 180,
+  "missing_cif_count": 0,
+  "missing_cif_examples": [],
+  "excluded_high_u_count": 0,
+  "excluded_high_u_examples": [],
+  "output_dir": "processed\\cgcnn_datasets\\u_test_all_structures_seed1",
+  "split": {
+    "seed": 1,
+    "val_fraction": 0.15,
+    "test_fraction": 0.2,
+    "stratify_target": true,
+    "n_train": 117,
+    "n_val": 27,
+    "n_test": 36,
+    "n_unlabeled_pool": 0
+  },
+  "label_column": "U_eV",
+  "feature_construction_uses_labels": false,
+  "reproducibility_note": "Run scripts/prepare_strict_ueff_cgcnn_dataset.py with the recorded arguments. It reads the strict ABO3 feature table and source CIFs read-only, then writes CGCNN-compatible derived CSVs plus metadata."
+}

@@ -1,0 +1,12 @@
+variant,block,fusion,n,MAE_mean,MAE_std,RMSE_mean,R2_mean,Spearman_mean,modality_class,display
+elem_basic__graph_struct__text_svd32,element+graph+text,graph_residual_on_element_text,3,0.6841464293486869,0.1519773563799686,1.030338126100496,0.7293057182775828,0.8500214500214501,tri,"element+graph+text
+residual"
+elem_basic__graph_struct__text_svd32,text,single_stacked,3,0.6980207343139764,0.1218134720143619,1.0503475085935323,0.7219391229974136,0.831351627366771,single,text
+elem_basic__graph_struct__text_svd32,element+text,late_oof_stacking,3,0.704710073109148,0.1242020577284245,1.0652958417529603,0.7105807203923705,0.8266838266838268,bi,"element+text
+late"
+elem_basic__graph_hybrid_cgcnn__text_svd32,graph+text,late_oof_stacking,3,0.7156582263380703,0.1029114486033237,1.042993387655759,0.7289118460763935,0.8530244530244531,bi,"graph+text
+late"
+elem_basic__graph_hybrid_cgcnn__text_svd32,element,single_stacked,3,0.729132999353508,0.0787972283868083,1.140429600799646,0.668127328872901,0.8011154011154012,single,element
+elem_basic__graph_hybrid_cgcnn__text_numeric_plus_svd64,element+graph,late_oof_stacking,3,0.7458175763074738,0.0793272805570496,1.113115891314074,0.6912758514720353,0.8253110253110254,bi,"element+graph
+late"
+elem_basic__graph_hybrid_cgcnn__text_numeric_plus_svd64,graph,single_stacked,3,0.7587114092683521,0.0991106316516577,1.1186853520349926,0.6882233066602894,0.8245388245388247,single,graph

@@ -1,0 +1,20 @@
+{
+  "data_dir": "processed\\cgcnn_datasets\\u_test_all_structures_seed2",
+  "target": "U_eV",
+  "device": "cpu",
+  "best_val_MAE": 0.8157457786577719,
+  "test_metrics": {
+    "MAE": 0.874415664073442,
+    "RMSE": 1.222765153083659,
+    "R2": 0.6427357741218749
+  },
+  "embedding": {
+    "n_embeddings": 180,
+    "embedding_dim": 128
+  },
+  "normalizer": {
+    "mean": 3.657710075378418,
+    "std": 2.113933801651001
+  },
+  "reproducibility_note": "Prepare data with scripts/prepare_cgcnn_dataset.py, then run this script with the recorded arguments."
+}

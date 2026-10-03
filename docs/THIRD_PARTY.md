@@ -1,0 +1,3 @@
+# Third-party material
+
+Core execution uses NumPy, pandas, SciPy, scikit-learn and Matplotlib, installed separately under their own licences. No third-party model implementation has been vendored. Original optional CGCNN training code expects the external CGCNN implementation and raw structure assets; the distributed benchmark consumes supplied embeddings. CIF content, atom feature initialization and chemical-prior text are research inputs whose provenance and redistribution permissions must be confirmed by the authors before public deposition. No data or third-party software licence is inferred from an upstream repository name.

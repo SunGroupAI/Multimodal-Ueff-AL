@@ -1,0 +1,21 @@
+# Snapshot of the author's global style. No per-script typography overrides.
+font.family: sans-serif
+font.sans-serif: Arial, Helvetica, DejaVu Sans
+font.size: 8.5
+axes.titlesize: 10.0
+axes.labelsize: 9.5
+axes.linewidth: 0.75
+axes.spines.top: True
+axes.spines.right: True
+xtick.labelsize: 8.0
+ytick.labelsize: 8.0
+xtick.direction: out
+ytick.direction: out
+legend.fontsize: 8.0
+legend.frameon: False
+figure.facecolor: FFFFFF
+axes.facecolor: FFFFFF
+lines.linewidth: 1.35
+pdf.fonttype: 42
+svg.fonttype: none
+axes.prop_cycle: cycler("color", ["579DC8", "DC7C74", "E5BC54", "079BA4", "9DC6DF", "E9AAA5", "8E9296"])

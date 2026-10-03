@@ -1,0 +1,60 @@
+{
+  "package_status": "submission_review_package_no_licence_selected_not_published",
+  "checks": [
+    {
+      "command": "python scripts/verify_release.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.641
+    },
+    {
+      "command": "python scripts/reproduce.py --mode summary",
+      "exit_code": 0,
+      "elapsed_seconds": 0.641
+    },
+    {
+      "check": "copied feature values, identities, row order and labels match original inputs",
+      "status": "PASS"
+    },
+    {
+      "check": "seven-representation real-data AL smoke run, one seed and one round",
+      "status": "PASS",
+      "rows": 14
+    }
+  ],
+  "absolute_path_and_literal_credential_scan": "PASS",
+  "supervised_component_smoke": "PASS (actual feature rows; expert OOF, meta model and train-only TF-IDF/SVD encoding)",
+  "figure_reproduction": "PASS (portable processed inputs and bundled style)",
+  "figure_collision_audit": {
+    "pdf": "outputs\\figure_reproduction\\fig3_grouped_representation_framework.pdf",
+    "auditable": true,
+    "verdict": "PASS",
+    "page_count": 1,
+    "visible_text_box_count": 57,
+    "text_trace_count": 60,
+    "stroke_path_count": 128,
+    "filled_region_count": 118,
+    "image_region_count": 0,
+    "summary": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 15,
+      "contained_image_overlays": 0
+    },
+    "thresholds": {
+      "text_inset_pt": 0.6,
+      "min_overlap_ratio": 0.05,
+      "clipping_tolerance_pt": 0.5
+    },
+    "findings": []
+  },
+  "full_historical_retraining": "NOT_PERFORMED; historical RNG and model-selection limitations documented",
+  "clean_environment_install": "NOT_PERFORMED; verified using the recorded installed environment",
+  "licence": "not selected, per author instruction",
+  "source_datasets_modified": false,
+  "not_in_archive": [
+    "runtime caches",
+    "smoke outputs",
+    "numeric reanalysis working outputs",
+    "temporary figure-reproduction outputs"
+  ]
+}

@@ -1,0 +1,13 @@
+category,removal_class,modality,display_label,seed,MAE_penalty_eV,reduced_MAE_eV,multimodal_MAE_eV
+Bimodal,One modality removed,Element + Structure,"Remove chemical prior
+(Element + Structure)",0,0.09855380867042829,0.6615947687716269,0.5630409601011986
+Bimodal,One modality removed,Element + Structure,"Remove chemical prior
+(Element + Structure)",1,0.12202891779233627,0.7567407377609988,0.6347118199686625
+Bimodal,One modality removed,Element + Structure,"Remove chemical prior
+(Element + Structure)",2,-0.035569285586403376,0.8191172223897958,0.8546865079761992
+Single,Two modalities removed,Structure,"Keep structure only
+(remove element + chemical prior)",0,0.10826421268019182,0.6713051727813905,0.5630409601011986
+Single,Two modalities removed,Structure,"Keep structure only
+(remove element + chemical prior)",1,0.10372591742535031,0.7384377373940129,0.6347118199686625
+Single,Two modalities removed,Structure,"Keep structure only
+(remove element + chemical prior)",2,0.011704809653453774,0.8663913176296529,0.8546865079761992
